@@ -1,1 +1,36 @@
+## HTML Interview Questions-
 
+This repository contains a collection of HTML interview questions and their answers. These questions cover various topics related to HTML.
+
+## Questions and Answers-
+
+
+Q1. <!DOCTYPE html> - Is it a tag of HTML? If not, what is it and why do we use it?
+A1. <!DOCTYPE html> is not an HTML tag. It is a document type declaration (DTD) that specifies the version of HTML being used. It is placed at the beginning of an HTML document to ensure proper rendering and compatibility with web browsers.
+
+Q2. Explain Semantic tags in HTML? And why do we need them?
+A2. Semantic tags in HTML are elements that give meaning and structure to the content. They represent the role or purpose of the content, making it more accessible and SEO-friendly. Examples of semantic tags include <header>, <nav>, <section>, <article>, <footer>, etc.
+
+Q3. Differentiate between HTML Tags and Elements?
+A3. In HTML, a tag is the markup used to define the beginning and end of an element, whereas an element consists of the opening tag, content, and closing tag. Tags are used to define the structure of elements, while elements represent the actual content on a webpage.
+
+Q4. Build Your Resume using HTML only
+A4. Here is an example of a resume built using HTML only.
+
+Q5. Write HTML code to create a layout similar to the given image
+A5. Here is the HTML code that creates a layout similar to the given image.
+
+Q6. What are some advantages of HTML5 over its previous versions?
+A6. HTML5 introduced several new features and improvements, including native support for multimedia elements (video and audio), canvas for drawing graphics, local storage, semantic elements, enhanced form controls, and improved mobile device support.
+
+Q7. Create a simple Music player using HTML only
+A7. Here is an example of a simple music player created using HTML only.
+
+Q8. What is the difference between <figure> tag and <img> tag?
+A8. The <figure> tag is used to encapsulate self-contained content, such as images, illustrations, diagrams, code snippets, etc. It can include an optional caption using the <figcaption> tag. On the other hand, the <img> tag is specifically used to insert an image into an HTML document.
+
+Q9. What’s the difference between HTML tag and attribute? Provide examples of some global attributes.
+A9. HTML tags represent the elements and structure of a webpage, such as <h1>, <p>, <div>, etc. Attributes, on the other hand, provide additional information about an HTML element. Some global attributes in HTML include class, id, style, title, lang, data-*, aria-*, etc.
+
+Q10. Build a table that looks like the given image
+A10. Here is the HTML code that builds a table resembling the given image.
