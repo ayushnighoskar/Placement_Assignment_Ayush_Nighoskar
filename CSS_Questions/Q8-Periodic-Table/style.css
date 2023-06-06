@@ -1,0 +1,58 @@
+*{
+    text-align: center;
+}
+sup{
+    position: relative;
+    left: -15px;
+    top: -13px;
+}
+table{
+    font-size: 18px;
+    font-weight: bold;
+}
+th{
+    border: none !important; 
+}
+td{
+    width: 65px;
+    height: 65px;
+}
+table{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.blank{
+    border: none;
+}
+.pink, .green, .blue, .yellow{
+    background-color: #ff9999;
+    border: none;
+    border-radius: 5px;
+    box-shadow:5px 5px 10px #000;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.pink:hover{
+    background-color: #ff9999;
+}
+.green{
+    background-color: #9bff99;
+}
+.green:hover{
+    background-color: #9bff99;
+}
+
+.blue{
+    background-color: #99ccff;
+}
+.blue:hover{
+    background-color: #99ccff;
+}
+.yellow{
+    background-color: #fdff8c;
+}
+.yellow:hover{
+    background-color:  #fdff8c;
+}
