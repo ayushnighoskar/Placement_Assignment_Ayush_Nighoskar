@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 class="YourBlogs">Create Your Blog....</h1>
+
+    <div>
+            <section>
+            <form class="" onsubmit="addData(event)">
+                <input type="text"  id="title" placeholder="Add Blog Title" />
+                <textarea class="text" id="text" cols="40" rows="10" placeholder="Add Your Blog"></textarea>
+                <button class="AddBlog" type="submit">
+                    Add Blog
+                </button>
+            </form>
+            <hr><hr>
+            <h2 class="YourBlogs">Your Blogs....</h2>
+            <div class="my-blog">
+            </div>
+            <button class="btn hidden">
+                Delete All Your Blogs
+            </button>
+            <hr>
+            <hr>
+            <h2 class="YourBlogs">Recommended Blogs....</h2>
+        </section>
+            <section>
+                <div class="card">
+                </div>
+            </section>
+
+            <script src="./script.js"></script>
+</body>
+
+</html>

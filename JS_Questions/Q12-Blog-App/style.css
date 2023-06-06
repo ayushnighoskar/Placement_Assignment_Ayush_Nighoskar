@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 30%;
+    justify-content: center;
+    margin: 0 auto;
+}
+#title{
+    height: 3rem;
+    outline: none;
+    border-radius: 0.5rem;
+   background-color: black;
+   padding: 1rem;
+   color: whitesmoke;
+   border: none;
+
+
+}
+#text{
+    height: 5rem;
+    outline: none;
+    border-radius: 0.5rem;
+   background-color:rgb(227, 217, 217);
+   padding: 1rem;
+   border: none;
+}
+:placeholder{
+    color: #fff;
+    font-size: 50px;
+}
+
+.YourBlogs{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.btn, .AddBlog{
+    background-color: black;
+    color: #fff;
+    height: 3rem;
+    width: 20%;
+    border-radius: 10px;
+    margin: 2rem auto;
+    font-size: 1.1rem;
+}
+.btn{
+    margin-left: 35vw;
+}
+.AddBlog{
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+h1{
+    text-align: center;
+}
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.my-blog{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.subcard{
+    width: 22%;
+    background-color: rgb(227, 217, 217);
+    padding: 1rem;
+}
+
+.subcard h3{
+    padding: 1rem 1rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 600px){
+    form {
+    
+        width: 45%;
+        
+    }
+    .btn, .AddBlog {
+
+        width: 30%;
+        
+    }
+    .btn{
+        margin-left: 32vw;
+    }
+
+    .subcard {
+        margin: 0 auto;
+        width: 40%;
+        background-color: rgb(227, 217, 217);
+        padding: 1rem;
+    }
+}
+
+@media only screen and  (max-width:600px){
+    form {
+    
+        width: 80%;
+        
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        
+    }
+    .subcard {
+        margin: 0 auto;
+        width: 90%;
+        background-color: rgb(227, 217, 217);
+        padding: 1rem;
+    }
+    .btn, .AddBlog {
+       
+        width: 55%;
+        
+    }
+    .btn {
+        margin-left: 22vw;
+    }
+}
