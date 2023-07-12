@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Validation</h2>
+
+  <form id="myForm" onsubmit="validateForm(event)">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <span id="nameError" class="error"></span>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <span id="emailError" class="error"></span>
+    </div>
+
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+      <span id="phoneError" class="error"></span>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <span id="passwordError" class="error"></span>
+    </div>
+
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+      <span id="ageError" class="error"></span>
+    </div>
+
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <span id="genderError" class="error"></span>
+    </div>
+
+    <div>
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+      <span id="dateError" class="error"></span>
+    </div>
+
+    <div>
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" required>
+      <span id="colorError" class="error"></span>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Clear previous error messages
+      clearErrors();
+
+      // Get form field values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const age = document.getElementById('age').value.trim();
+      const gender = document.getElementById('gender').value.trim();
+      const date = document.getElementById('date').value.trim();
+      const color = document.getElementById('color').value.trim();
+
+      // Regular expressions for validation
+      const nameRegex = /^[a-zA-Z\s]+$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\d{10}$/;
+      const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+      const ageRegex = /^\d+$/;
+
+      // Validate name
+      if (!name.match(nameRegex)) {
+        document.getElementById('nameError').textContent = 'Invalid name';
+      }
+
+      // Validate email
+      if (!email.match(emailRegex)) {
+        document.getElementById('emailError').textContent = 'Invalid email';
+      }
+
+      // Validate phone number
+      if (!phone.match(phoneRegex)) {
+        document.getElementById('phoneError').textContent = 'Invalid phone number';
+      }
+
+      // Validate password
+      if (!password.match(passwordRegex)) {
+        document.getElementById('passwordError').textContent = 'Invalid password';
+      }
+
+      // Validate age
+      if (!age.match(ageRegex)) {
+        document.getElementById('ageError').textContent = 'Invalid age';
+      }
+
+      // Validate gender
+      if (!gender) {
+        document.getElementById('genderError').textContent = 'Please select a gender';
+      }
+
+      // Validate date
+      if (!date) {
+        document.getElementById('dateError').textContent = 'Please select a date';
+      }
+
+      // Validate color
+      if (!color) {
+        document.getElementById('colorError').textContent = 'Please select a color';
+      }
+    }
+
+    // Clear error messages
+    function clearErrors() {
+      const errorElements = document.querySelectorAll('.error');
+      errorElements.forEach(error => error.textContent = '');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Navbar</title>
+  <style>
+    /* Basic styles for the navbar */
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar-items {
+      display: flex;
+      gap: 10px;
+    }
+
+    .navbar-item {
+      list-style: none;
+    }
+
+    .navbar-item a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar-items {
+        display: none;
+        flex-direction: column;
+      }
+
+      .navbar-items.show {
+        display: flex;
+      }
+
+      .navbar-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">Logo</div>
+    <div class="navbar-toggle">&#9776;</div>
+    <ul class="navbar-items">
+      <li class="navbar-item"><a href="#">Home</a></li>
+      <li class="navbar-item"><a href="#">About</a></li>
+      <li class="navbar-item"><a href="#">Services</a></li>
+      <li class="navbar-item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    // Add click event to toggle the menu on smaller screens
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarItems = document.querySelector('.navbar-items');
+
+    navbarToggle.addEventListener('click', () => {
+      navbarItems.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
